@@ -283,6 +283,10 @@ header {
       justify-content: center;
       align-items: flex-start;
 
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
       img {
         border-radius: 30px;
       }
@@ -299,6 +303,10 @@ header {
 
     .slick-active {
       opacity: 1;
+
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
     }
   }
 
@@ -337,6 +345,11 @@ $photo-grid-max-width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.5em;
+      color: black;
+    }
   }
 
   .row {
@@ -372,8 +385,6 @@ $photo-grid-max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-
 }
 
 
@@ -398,9 +409,23 @@ footer {
     margin-left: 20px;
   }
 
+  .social__icon {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    opacity: 0.8;
+    margin: 10px 5px;
+
+    &:hover {
+      scale: 1.15;
+      opacity: 1;
+    }
+  }
+
   .social-media {
     margin-left: auto;
-
+    
     a {
       display: inline-block;
       width: 40px;
