@@ -68,6 +68,19 @@ header {
     width: 100px;
   }
 
+  img {
+    margin-right: 10px;
+  }
+
+  .tagline-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
   #main-nav {
 
     a {
