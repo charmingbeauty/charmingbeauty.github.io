@@ -6,7 +6,7 @@ $font-stack: 'Open Sans',
 sans-serif;
 $font-header: 'Pompiere',
 cursive;
-$breakpoint-mobile: 480px;
+$breakpoint-mobile: 600px;
 
 // Mixins
 @mixin flex-center {
@@ -70,7 +70,17 @@ header {
 
   img {
     margin-right: 10px;
+
   }
+
+  #logo {
+
+    @media screen and (max-width: 600px) {
+
+      width: 50px;
+    }
+  }
+
 
   .tagline-logo {
     display: flex;
@@ -79,6 +89,11 @@ header {
     font-size: 23px;
     font-weight: bold;
     text-decoration: none;
+    text-align: left;
+    
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: 19px;
+    }
   }
 
   #main-nav {
@@ -258,6 +273,13 @@ header {
   justify-content: space-between;
   padding: 20px;
 
+  .review__author {
+    font-weight: 300;
+    opacity: 0.5;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
   .carousel {
     flex: 1;
     padding: 10px;
@@ -314,6 +336,10 @@ header {
     width: 70px;
     margin: 0 auto;
     margin-top: 20px;
+
+    &.facebook {
+      width: 50px;
+    }
   }
 
   .slick-active {
@@ -396,8 +422,16 @@ footer {
   display: flex;
   justify-content: flex-start;
 
+  @media screen and (max-width: 600px) {
+   flex-direction: column;
+  }
+
   .logo {
     width: 100px;
+  }
+
+  .footer-logo {
+    width: 85px;
   }
 
   .address {
@@ -407,6 +441,10 @@ footer {
   #address {
     margin-right: auto;
     margin-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+    }
   }
 
   .social__icon {

@@ -60,6 +60,11 @@ header #logo {
 header img {
   margin-right: 10px;
 }
+@media screen and (max-width: 600px) {
+  header #logo {
+    width: 50px;
+  }
+}
 header .tagline-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +76,12 @@ header .tagline-logo {
   font-size: 23px;
   font-weight: bold;
   text-decoration: none;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  header .tagline-logo {
+    font-size: 19px;
+  }
 }
 header #main-nav a {
   margin-left: 15px;
@@ -263,6 +274,12 @@ header #main-nav a:hover {
           justify-content: space-between;
   padding: 20px;
 }
+#reviews .review__author {
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 14px;
+  margin-top: 15px;
+}
 #reviews .carousel {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -322,6 +339,9 @@ header #main-nav a:hover {
   width: 70px;
   margin: 0 auto;
   margin-top: 20px;
+}
+#reviews .reviews-logo.facebook {
+  width: 50px;
 }
 #reviews .slick-active {
   display: -webkit-box;
@@ -432,8 +452,19 @@ footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer .logo {
   width: 100px;
+}
+footer .footer-logo {
+  width: 85px;
 }
 footer .address {
   text-align: center;
@@ -441,6 +472,11 @@ footer .address {
 footer #address {
   margin-right: auto;
   margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  footer #address {
+    font-size: 12px;
+  }
 }
 footer .social__icon {
   width: 50px;
@@ -481,7 +517,7 @@ footer .social-media a:hover {
   background-color: #454545;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #services,
   #about,
   #reviews {
