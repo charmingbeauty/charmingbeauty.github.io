@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://charmingbeauty.github.io/sitemap.xml
+
+# Allow all important pages
+Allow: /index.html
+Allow: /vassar-mi.html
+Allow: /frankenmuth-mi.html
+Allow: /cass-city-mi.html
+Allow: /reese-mi.html
+Allow: /millington-mi.html
+Allow: /sebewaing-mi.html
+Allow: /marlette-mi.html
+
+# Allow images and assets
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Crawl delay (be respectful)
+Crawl-delay: 1 
