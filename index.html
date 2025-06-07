@@ -4,22 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <title>Charming Beauty by Kate Tu</title>
-  <meta name="title" content="Charming Beauty by Kate Tu - Caro MI">
-  <meta name="description" content="Charming Beauty by Kate Tu - Nail and Lash Salon in Caro, Michigan.">
-  <meta name="keywords" content="nails, caro MI, Michigan, nail art, custom nail">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+  <title>Charming Beauty by Kate Tu - Luxury Salon & Spa</title>
+  <meta name="title" content="Charming Beauty by Kate Tu - Luxury Salon & Spa in Caro MI">
+  <meta name="description" content="Experience luxury beauty services at Charming Beauty by Kate Tu. Premium nail art, eyelash extensions, and beauty treatments in Caro, Michigan.">
+  <meta name="keywords" content="luxury salon, nail art, eyelash extensions, beauty spa, Caro MI, Michigan, premium beauty services">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta property="og:description" content="Offering Custom Nail Art, Eyelashes.">
+  <meta property="og:description" content="Premium beauty services including custom nail art, eyelash extensions, and luxury spa treatments.">
   <meta property="og:image" content="/images/logo.svg">
   <meta name="language" content="English">
-
-
-
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/> -->
 
   <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
@@ -36,224 +32,502 @@
 </head>
 
 <body>
-  <section id="hero" class="darkened">
-    <!-- The header is moved inside the hero section -->
-    <header>
-      <a href="index.html" class="tagline-logo">
-        <img src="/images/logo.svg" alt="Logo" id="logo">Charming Beauty
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="/images/logo.svg" alt="Charming Beauty Logo" class="logo-img">
+        <span class="logo-text">Charming Beauty</span>
       </a>
-      <nav id="main-nav">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <!-- <a href="policy.html">Policy</a> -->
-      </nav>
-    </header>
-    <!-- The rest of the hero content -->
-    <div class="hero-content">
-      <h1 class="hero-title">Professional Nail &amp; Lash Services in Caro, MI</h1>
-      <a class="cta" href="#book" target="_blank">Book Appointment</a>
+      <div class="nav-menu">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#book" class="nav-link nav-cta">Book Now</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-      <!-- <a class="cta" href="https://charming-beauty-by-kate.square.site/" target="_blank">Book Appointment</a> -->
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    
+    <!-- Decorative Elements -->
+    <div class="hero-decoration circle-1"></div>
+    <div class="hero-decoration circle-2"></div>
+    <div class="hero-decoration diamond"></div>
+    <div class="hero-decoration line"></div>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Luxury Beauty<br><span class="accent">Redefined</span></h1>
+        <p class="hero-subtitle">Experience the finest in nail artistry, lash extensions, and beauty treatments at Caro's premier luxury salon</p>
+        <div class="hero-buttons">
+          <a href="#book" class="btn btn-primary">Book Your Experience</a>
+          <a href="#services" class="btn btn-secondary">Our Services</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-indicator"></div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services">
-    <div class="row">
-      <h2>Services Offered</h2>
-    </div>
-    <div class="column">
-      <!-- <a href="https://charming-beauty-by-kate.square.site/" target="_blank"
-        class="service-block darkened service-block-1"> -->
-
-      <a href="#book" target="_blank" class="service-block darkened service-block-1">
-        <h3>Eyelashes</h3>
-      </a>
-      <!-- <a href="https://charming-beauty-by-kate.square.site/" target="_blank"
-        class="service-block darkened  service-block-2"> -->
-      <a href="#book" target="_blank" class="service-block darkened service-block-2">
-
-        <h3>Pedicure</h3>
-      </a>
-    </div>
-    <div class="column">
-      <!-- <a href="https://charming-beauty-by-kate.square.site/" target="_blank"
-        class="service-block darkened service-block-3"> -->
-
-      <a href="#book" target="_blank" class="service-block darkened service-block-3">
-        <h3>Nails</h3>
-      </a>
-    </div>
-    <div class="column">
-      <!-- <a href="https://charming-beauty-by-kate.square.site/" target="_blank"
-        class="service-block darkened service-block-4"> -->
-
-      <a href="#book" target="_blank" class="service-block darkened service-block-4">
-        <h3>Brows</h3>
-      </a>
-      <!-- <a href="https://charming-beauty-by-kate.square.site/" target="_blank"
-        class="service-block darkened service-block-5"> -->
-
-      <a href="#book" target="_blank" class="service-block darkened service-block-5">
-        <h3>Waxing</h3>
-      </a>
-    </div>
-  </section>
-
-  <section id="book">
-    <iframe src="https://charming-beauty-by-kate.square.site/" style="border: none; width: 100%; height: 700px;">
-    </iframe>
-  </section>
-
-  <section id="about">
-    <div class="half-width">
-      <img src="/images/tien-tien.png" alt="About Me">
-    </div>
-    <div class="half-width">
-      <h2>About Me</h2>
-      <p class="subcopy">Hello, everyone!
-        My name is Kate Tu, and I’m a certified, licensed Cosmetologist & Permanent Makeup & Eyelash Extension Artist. I
-        have worked as a cosmetologist for over 5 years.
-        From taking care of nails, eyelashes, and eyebrows to providing a complete transformation, I strive for
-        excellence every single time. I put a lot of effort into the details to ensure my clients leave feeling perfect
-        and satisfied. I will always do my best to make sure your beauty needs have been taken care of.
-        Thank you for visiting and choosing my services. I look forward to taking care of you!</p>
-      <!-- <a class="cta" href="https://charming-beauty-by-kate.square.site/" target="_blank">Book Appointment</a> -->
-      <a class="cta" href="#book" target="_blank">Book Appointment</a>
-    </div>
-  </section>
-
-  <section id="reviews">
-    <div class="carousel">
-      <div>
-        <div class="half-width">
-          <h2>Happy Reviews</h2>
-          <p class="subcopy">"1000/10 recommend! I seen Kate, she did my nails! By far the best place and will be going
-            back! I enjoyed her, she was a doll!
-            <br>
-            <br>
-            She listened and did such an amazing job! Honestly she has my business from here on out and I’ve been
-            telling all my friends to go to her!”</p>
-          <p class="review__author">-Joan Bennet</p>
-          <a href="https://www.google.com/maps/contrib/113878410539184638674/reviews?sa=X&ved=0CBQQzsEIahcKEwiY86CpqLD_AhUAAAAAHQAAAAAQCw"
-            target="_blank"><img class="reviews-logo" src="/images/google-g.png" alt="Google Review"></a>
-        </div>
-        <div class="half-width">
-          <img src="/images/review--a.png" class="review-image" alt="Related image">
-        </div>
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Signature Services</h2>
+        <p class="section-subtitle">Indulge in our carefully curated selection of premium beauty treatments</p>
       </div>
-
-      <div>
-        <div class="half-width">
-          <h2>Happy Reviews</h2>
-          <p class="subcopy">"If anyone wants cute nails make an appointment at just teasin with Kate Tu she’s amazing
-            and so sweet!”</p>
-          <p class="review__author">-Rachel Teddy</p>
-          <a href="https://www.facebook.com/rachel.teddy.1/posts/pfbid0Eedft1yDzdHniGdTnGJWatHnCDJJponX5CnmMuVL5eJUYyaWhdYWqwpTHkJf6Z9gl"
-            target="_blank"><img class="reviews-logo facebook" src="/images/fb-logo.svg"></a>
+      
+      <div class="services-carousel swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-image">
+                <img src="/images/eyelashes.png" alt="Luxury Eyelash Extensions">
+                <div class="service-overlay">
+                  <a href="#book" class="service-btn">Book Now</a>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Luxury Lash Extensions</h3>
+                <p class="service-description">Experience the art of lash perfection with our premium extension services. From classic to volume, we create stunning looks that enhance your natural beauty.</p>
+                <div class="service-features">
+                  <span class="feature">Classic Extensions</span>
+                  <span class="feature">Volume Lashes</span>
+                  <span class="feature">Hybrid Sets</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-image">
+                <img src="/images/nails.png" alt="Custom Nail Art">
+                <div class="service-overlay">
+                  <a href="#book" class="service-btn">Book Now</a>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Artisan Nail Design</h3>
+                <p class="service-description">Transform your nails into works of art with our custom nail designs. From elegant classics to bold statements, we bring your vision to life.</p>
+                <div class="service-features">
+                  <span class="feature">Custom Art</span>
+                  <span class="feature">Gel Manicures</span>
+                  <span class="feature">Nail Extensions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-image">
+                <img src="/images/pedicure.png" alt="Luxury Pedicure">
+                <div class="service-overlay">
+                  <a href="#book" class="service-btn">Book Now</a>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Luxury Pedicure</h3>
+                <p class="service-description">Indulge in our spa-quality pedicure treatments that rejuvenate and beautify your feet with premium products and expert care.</p>
+                <div class="service-features">
+                  <span class="feature">Spa Treatment</span>
+                  <span class="feature">Luxury Products</span>
+                  <span class="feature">Relaxation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-image">
+                <img src="/images/eyebrows.png" alt="Eyebrow Design">
+                <div class="service-overlay">
+                  <a href="#book" class="service-btn">Book Now</a>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Precision Brow Design</h3>
+                <p class="service-description">Frame your face with perfectly sculpted brows using our expert shaping and design techniques for a flawless finish.</p>
+                <div class="service-features">
+                  <span class="feature">Brow Shaping</span>
+                  <span class="feature">Tinting</span>
+                  <span class="feature">Styling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="service-card">
+              <div class="service-image">
+                <img src="/images/waxing.png" alt="Professional Waxing">
+                <div class="service-overlay">
+                  <a href="#book" class="service-btn">Book Now</a>
+                </div>
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Professional Waxing</h3>
+                <p class="service-description">Achieve smooth, silky skin with our professional waxing services using high-quality products for comfortable, long-lasting results.</p>
+                <div class="service-features">
+                  <span class="feature">Premium Wax</span>
+                  <span class="feature">Gentle Process</span>
+                  <span class="feature">Expert Care</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="half-width">
-          <img src="/images/review--b.png" class="review-image" alt="Related image">
-        </div>
-      </div>
-
-      <div>
-        <div class="half-width">
-          <h2>Happy Reviews</h2>
-          <p class="subcopy">"
-            I LOVE LOVE LOVE my lashes.
-            <br>
-            I got the classic extensions, and after having natural lashes that barely exist, these look so real, full,
-            thick and so lightweight I can't even feel them. I love not having to wear eye makeup anymore.
-            The first extensions Kate did for me still looked nearly flawless 4 weeks later . And when I thought this
-            was the best my lashes have ever looked they just got better the next time I went. So ladies if you want
-            great lashes go see Kate at just teasin. you won't be disappointed.
-            <br>
-            <br>
-            She listened and did such an amazing job! Honestly she has my business from here on out and I’ve been
-            telling all my friends to go to her!”</p>
-          <p class="review__author">-Kayla Adamczyk</p>
-          <a href="https://g.co/kgs/8hpLGb" target="_blank"><img class="reviews-logo" src="/images/google-g.png"></a>
-        </div>
-        <div class="half-width">
-          <img src="/images/review--c.png" class="review-image" alt="Related image">
-        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
 
-  <section id="photos">
-    <div class="row text-center">
-      <a style="text-decoration-line: underline; text-decoration-color: #121212;"
-        href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <h2 style="color: #121212;">@nail_art_bykate</h2>
-      </a>
-    </div>
-    <div class="photo-grid">
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-1.png" alt="Photo 1">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-2.png" alt="Photo 2">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-3.png" alt="Photo 3">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-4.png" alt="Photo 4">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-5.png" alt="Photo 5">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-6.png" alt="Photo 6">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-7.png" alt="Photo 7">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-8.png" alt="Photo 8">
-      </a>
-      <a href="https://charming-beauty-by-kate.square.site/" target="_blank">
-        <img src="/images/nails-9.png" alt="Photo 9">
-      </a>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/images/tien-tien.png" alt="Kate Tu - Master Cosmetologist">
+          <div class="about-badge">
+            <span>5+ Years</span>
+            <small>Experience</small>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="about-title">Meet Kate Tu</h2>
+          <p class="about-subtitle">Master Cosmetologist & Beauty Artist</p>
+          <div class="about-description">
+            <p>Welcome to Charming Beauty, where artistry meets luxury. I'm Kate Tu, a certified and licensed cosmetologist with over 5 years of experience in creating beautiful transformations.</p>
+            
+            <p>Specializing in permanent makeup, eyelash extensions, and intricate nail artistry, I believe that beauty is not just about looking good—it's about feeling confident and radiant from within.</p>
+            
+            <p>Every service I provide is crafted with meticulous attention to detail, using only the finest products and techniques to ensure you leave feeling absolutely perfect. Your satisfaction and comfort are my highest priorities.</p>
+          </div>
+          <div class="about-credentials">
+            <div class="credential">
+              <span class="credential-icon">🏆</span>
+              <div>
+                <h4>Certified Cosmetologist</h4>
+                <p>Licensed & Insured</p>
+              </div>
+            </div>
+            <div class="credential">
+              <span class="credential-icon">✨</span>
+              <div>
+                <h4>Permanent Makeup Artist</h4>
+                <p>Specialized Training</p>
+              </div>
+            </div>
+            <div class="credential">
+              <span class="credential-icon">👁️</span>
+              <div>
+                <h4>Lash Extension Expert</h4>
+                <p>Advanced Techniques</p>
+              </div>
+            </div>
+          </div>
+          <a href="#book" class="btn btn-primary">Book Your Appointment</a>
+        </div>
+      </div>
     </div>
   </section>
-  </main>
-  <footer>
-    <img src="/images/logo.svg" alt="Logo" class="footer-logo" id="footer-logo">
-    <div id="address">
-      <p>Just Teasin’ Salon</p>
-      <p>124 N. State St, Caro,</p>
-      <p>MI United States, 48723</p>
-      <p>(989) 673-4699</p>
 
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Artistry</h2>
+        <p class="section-subtitle">Discover the beauty we create every day</p>
+      </div>
+      
+      <div class="gallery-carousel swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-1.png" alt="Custom Nail Art Design">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Custom Nail Art</h3>
+                  <p>Intricate designs crafted with precision</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-2.png" alt="Elegant Nail Design">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Elegant Manicure</h3>
+                  <p>Sophisticated style for every occasion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-3.png" alt="Artistic Nail Creation">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Artistic Expression</h3>
+                  <p>Unique designs that tell your story</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-4.png" alt="Luxury Nail Design">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Luxury Finish</h3>
+                  <p>Premium quality in every detail</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-5.png" alt="Creative Nail Art">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Creative Vision</h3>
+                  <p>Bringing imagination to life</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-6.png" alt="Professional Nail Work">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Professional Excellence</h3>
+                  <p>Masterful technique and artistry</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-7.png" alt="Stunning Nail Design">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Stunning Results</h3>
+                  <p>Beauty that speaks for itself</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-8.png" alt="Detailed Nail Art">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Detailed Artistry</h3>
+                  <p>Precision in every stroke</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-item">
+              <img src="/images/nails-9.png" alt="Beautiful Nail Creation">
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Beautiful Creations</h3>
+                  <p>Transforming nails into art</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      
+      <div class="gallery-cta">
+        <p>Follow us on Instagram for more stunning work</p>
+        <a href="https://www.instagram.com/Nail_Art_byKate/" target="_blank" class="btn btn-outline">@nail_art_bykate</a>
+      </div>
     </div>
-    <div id="social-media">
-      <a href="https://facebook.com/kate.tietu"><img src="/images/fb.svg" class="social__icon" alt="Fb"></a>
-      <a href="https://www.instagram.com/Nail_Art_byKate/"><img src="/images/ig.svg" class="social__icon" alt="Ig"></a>
-      <!-- <a href="#"><img src="/images/tiktok.svg" alt="Tiktok"></a> -->
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Real experiences from our valued clients</p>
+      </div>
+      
+      <div class="reviews-carousel swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-content">
+                <div class="review-stars">
+                  <span>★★★★★</span>
+                </div>
+                <blockquote>
+                  "1000/10 recommend! I seen Kate, she did my nails! By far the best place and will be going back! I enjoyed her, she was a doll!
+                  <br><br>
+                  She listened and did such an amazing job! Honestly she has my business from here on out and I've been telling all my friends to go to her!"
+                </blockquote>
+                <div class="review-author">
+                  <strong>Joan Bennet</strong>
+                  <div class="review-source">
+                    <img src="/images/google-g.png" alt="Google Review" class="review-platform">
+                    <span>Google Review</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-image">
+                <img src="/images/review--a.png" alt="Nail work by Kate Tu">
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-content">
+                <div class="review-stars">
+                  <span>★★★★★</span>
+                </div>
+                <blockquote>
+                  "If anyone wants cute nails make an appointment at just teasin with Kate Tu she's amazing and so sweet!"
+                </blockquote>
+                <div class="review-author">
+                  <strong>Rachel Teddy</strong>
+                  <div class="review-source">
+                    <img src="/images/fb-logo.svg" alt="Facebook Review" class="review-platform">
+                    <span>Facebook Review</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-image">
+                <img src="/images/review--b.png" alt="Beautiful nail design">
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-content">
+                <div class="review-stars">
+                  <span>★★★★★</span>
+                </div>
+                <blockquote>
+                  "I LOVE LOVE LOVE my lashes.
+                  <br><br>
+                  I got the classic extensions, and after having natural lashes that barely exist, these look so real, full, thick and so lightweight I can't even feel them. I love not having to wear eye makeup anymore.
+                  <br><br>
+                  The first extensions Kate did for me still looked nearly flawless 4 weeks later. And when I thought this was the best my lashes have ever looked they just got better the next time I went. So ladies if you want great lashes go see Kate at just teasin. you won't be disappointed."
+                </blockquote>
+                <div class="review-author">
+                  <strong>Kayla Adamczyk</strong>
+                  <div class="review-source">
+                    <img src="/images/google-g.png" alt="Google Review" class="review-platform">
+                    <span>Google Review</span>
+                  </div>
+                </div>
+              </div>
+              <div class="review-image">
+                <img src="/images/review--c.png" alt="Eyelash extensions by Kate Tu">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="book" class="booking">
+    <div class="container">
+      <div class="booking-header">
+        <h2 class="section-title">Book Your Luxury Experience</h2>
+        <p class="section-subtitle">Ready to experience the finest in beauty services? Schedule your appointment today.</p>
+      </div>
+      <div class="booking-iframe">
+        <iframe src="https://charming-beauty-by-kate.square.site/" frameborder="0" title="Book Appointment"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="/images/logo.svg" alt="Charming Beauty Logo" class="footer-logo">
+          <h3>Charming Beauty</h3>
+          <p>Luxury beauty services in the heart of Caro, Michigan</p>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Visit Us</h4>
+          <address>
+            <p>Just Teasin' Salon</p>
+            <p>124 N. State St</p>
+            <p>Caro, MI 48723</p>
+            <p>(989) 673-4699</p>
+          </address>
+        </div>
+        
+        <div class="footer-locations">
+          <h4>Service Areas</h4>
+          <div class="location-links">
+            <a href="vassar-mi.html">Vassar, MI</a>
+            <a href="cass-city-mi.html">Cass City, MI</a>
+            <a href="reese-mi.html">Reese, MI</a>
+            <a href="millington-mi.html">Millington, MI</a>
+            <a href="sebewaing-mi.html">Sebewaing, MI</a>
+            <a href="marlette-mi.html">Marlette, MI</a>
+            <a href="frankenmuth-mi.html">Frankenmuth, MI</a>
+          </div>
+        </div>
+        
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://facebook.com/kate.tietu" target="_blank" aria-label="Facebook">
+              <img src="/images/fb.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/Nail_Art_byKate/" target="_blank" aria-label="Instagram">
+              <img src="/images/ig.svg" alt="Instagram">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Charming Beauty by Kate Tu. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-
-
-
-  <script>
-    $('.carousel').slick({
-      dots: true,
-      arrows: true,
-      speed: 500,
-      // fade: true,
-      cssEase: 'linear'
-    });
-  </script>
-
 </body>
-
 </html>
