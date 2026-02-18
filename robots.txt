@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://charmingbeauty.github.io/sitemap.xml
+Sitemap: https://charmingbeauty.org/sitemap.xml
 
 # Allow all important pages
 Allow: /index.html

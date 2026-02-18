@@ -1,6 +1,6 @@
 # 🚀 CHARMING BEAUTY SEO OPTIMIZATION REPORT
-**Date**: January 2, 2025  
-**Website**: https://charmingbeauty.github.io/  
+**Date**: February 18, 2026  
+**Website**: https://charmingbeauty.org/  
 **Business**: Charming Beauty by Kate Tu - Nail Salon & Lash Extensions  
 
 ---

@@ -988,45 +988,30 @@ img {
 }
 
 .swiper-button-next {
-  right: -30px !important;
-}
-@media (max-width: 1200px) {
-  .swiper-button-next {
-    right: -15px !important;
-  }
+  right: 10px !important;
 }
 @media (max-width: 768px) {
   .swiper-button-next {
-    right: 10px !important;
+    right: 5px !important;
   }
 }
 
 .swiper-button-prev {
-  left: -30px !important;
-}
-@media (max-width: 1200px) {
-  .swiper-button-prev {
-    left: -15px !important;
-  }
+  left: 10px !important;
 }
 @media (max-width: 768px) {
   .swiper-button-prev {
-    left: 10px !important;
+    left: 5px !important;
   }
 }
 
 .services-carousel {
-  padding: 0 60px 80px;
+  padding: 0 20px 80px;
   position: relative;
-}
-@media (max-width: 1200px) {
-  .services-carousel {
-    padding: 0 40px 80px;
-  }
 }
 @media (max-width: 768px) {
   .services-carousel {
-    padding: 0 20px 80px;
+    padding: 0 10px 80px;
   }
 }
 .services-carousel .swiper-pagination {
@@ -1038,17 +1023,12 @@ img {
 }
 
 .gallery-carousel {
-  padding: 0 60px 80px;
+  padding: 0 20px 80px;
   position: relative;
-}
-@media (max-width: 1200px) {
-  .gallery-carousel {
-    padding: 0 40px 80px;
-  }
 }
 @media (max-width: 768px) {
   .gallery-carousel {
-    padding: 0 20px 80px;
+    padding: 0 10px 80px;
   }
 }
 .gallery-carousel .swiper-pagination {
@@ -1060,17 +1040,12 @@ img {
 }
 
 .reviews-carousel {
-  padding: 0 60px 80px;
+  padding: 0 20px 80px;
   position: relative;
-}
-@media (max-width: 1200px) {
-  .reviews-carousel {
-    padding: 0 40px 80px;
-  }
 }
 @media (max-width: 768px) {
   .reviews-carousel {
-    padding: 0 20px 80px;
+    padding: 0 10px 80px;
   }
 }
 .reviews-carousel .swiper-pagination {

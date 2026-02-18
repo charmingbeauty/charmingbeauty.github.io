@@ -4,12 +4,12 @@
   
   <!-- Main Homepage -->
   <url>
-    <loc>https://charmingbeauty.github.io/</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://charmingbeauty.github.io/images/hero-2.png</image:loc>
+      <image:loc>https://charmingbeauty.org/images/hero-2.png</image:loc>
       <image:title>Charming Beauty Luxury Salon</image:title>
       <image:caption>Premier nail salon and lash extension studio in Caro, Michigan</image:caption>
     </image:image>
@@ -17,50 +17,50 @@
   
   <!-- Location Pages -->
   <url>
-    <loc>https://charmingbeauty.github.io/vassar-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/vassar-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/frankenmuth-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/frankenmuth-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/cass-city-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/cass-city-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/reese-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/reese-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/millington-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/millington-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/sebewaing-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/sebewaing-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://charmingbeauty.github.io/marlette-mi.html</loc>
-    <lastmod>2025-01-02</lastmod>
+    <loc>https://charmingbeauty.org/marlette-mi.html</loc>
+    <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
