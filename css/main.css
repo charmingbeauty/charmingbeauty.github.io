@@ -919,10 +919,12 @@ img {
   background: #D4A574;
   transform: translateY(-3px);
 }
-.footer .footer-social .social-links a img {
+.footer .footer-social .social-links a img,
+.footer .footer-social .social-links a svg {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1);
+  color: white;
+  fill: white;
 }
 .footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
