@@ -211,11 +211,13 @@ function initializeScrollAnimations() {
 function initializeMobileNav() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const body = document.body;
     
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
         });
         
         // Close menu when clicking on a link
@@ -224,6 +226,7 @@ function initializeMobileNav() {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                body.classList.remove('menu-open');
             });
         });
     }
