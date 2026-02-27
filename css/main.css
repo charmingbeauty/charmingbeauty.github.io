@@ -1003,20 +1003,58 @@ img {
     text-align: center;
   }
 }
+.footer .footer-brand {
+  position: relative;
+}
 .footer .footer-brand .footer-logo {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 16px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(212, 165, 116, 0.2);
+}
+@media (max-width: 1024px) {
+  .footer .footer-brand .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .footer .footer-brand h3 {
   font-family: "Playfair Display", serif;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 12px;
   color: #D4A574;
+  letter-spacing: 0.02em;
 }
 .footer .footer-brand p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+.footer .footer-brand .footer-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 4px;
+}
+.footer .footer-brand .footer-hours .hours-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #D4A574;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.footer .footer-brand .footer-hours .hours-time {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
 }
 .footer .footer-contact h4 {
   color: #D4A574;
