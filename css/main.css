@@ -294,7 +294,8 @@ img {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg.webp");
   background-size: cover;
   background-position: center;
@@ -303,11 +304,23 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
+  padding: 100px 0 80px;
 }
 @supports not (background-image: url("/images/hero-2.pmg.webp")) {
   .hero {
     background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg.png");
+  }
+}
+@media (max-height: 700px) {
+  .hero {
+    padding: 80px 0 60px;
+  }
+}
+@media (max-height: 600px) {
+  .hero {
+    min-height: auto;
+    padding: 90px 0 50px;
   }
 }
 .hero::before {
@@ -339,13 +352,26 @@ img {
 }
 .hero .hero-title {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.2;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+@media (max-height: 700px) {
+  .hero .hero-title {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 16px;
+  }
+}
+@media (max-height: 500px) {
+  .hero .hero-title {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
 }
 .hero .hero-title .accent {
   color: #D4A574;
@@ -356,20 +382,52 @@ img {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: shimmer 4s ease-in-out infinite;
+  display: inline-block;
+  padding-right: 0.1em;
 }
 .hero .hero-subtitle {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(14px, 2vw, 20px);
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 40px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-height: 700px) {
+  .hero .hero-subtitle {
+    margin-bottom: 24px;
+    font-size: clamp(14px, 1.8vw, 18px);
+  }
+}
+@media (max-height: 500px) {
+  .hero .hero-subtitle {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
 .hero .hero-buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media (max-height: 700px) {
+  .hero .hero-buttons {
+    gap: 12px;
+  }
+  .hero .hero-buttons .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+@media (max-height: 500px) {
+  .hero .hero-buttons {
+    gap: 10px;
+  }
+  .hero .hero-buttons .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
 }
 .hero .hero-buttons .btn.btn-secondary {
   background: rgba(255, 255, 255, 0.1);
@@ -389,6 +447,16 @@ img {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   z-index: 10;
+}
+@media (max-height: 700px) {
+  .hero .hero-scroll {
+    bottom: 20px;
+  }
+}
+@media (max-height: 600px) {
+  .hero .hero-scroll {
+    display: none;
+  }
 }
 .hero .hero-scroll .scroll-indicator {
   width: 2px;
