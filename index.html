@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Preconnect to external origins for faster resource loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <!-- Preload LCP image (hero) - critical for Core Web Vitals -->
+  <link rel="preload" as="image" href="/images/hero-2.pmg.webp">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
@@ -218,7 +224,7 @@
               <div class="service-image">
                 <picture>
                   <source srcset="/images/eyelashes.webp" type="image/webp">
-                  <img src="/images/eyelashes.png" alt="Luxury Eyelash Extensions">
+                  <img src="/images/eyelashes.png" alt="Luxury Eyelash Extensions" loading="lazy">
                 </picture>
                 <div class="service-overlay">
                   <a href="#book" class="service-btn">Book Now</a>
@@ -241,7 +247,7 @@
               <div class="service-image">
                 <picture>
                   <source srcset="/images/nails.webp" type="image/webp">
-                  <img src="/images/nails.png" alt="Custom Nail Art">
+                  <img src="/images/nails.png" alt="Custom Nail Art" loading="lazy">
                 </picture>
                 <div class="service-overlay">
                   <a href="#book" class="service-btn">Book Now</a>
@@ -264,7 +270,7 @@
               <div class="service-image">
                 <picture>
                   <source srcset="/images/pedicure.webp" type="image/webp">
-                  <img src="/images/pedicure.png" alt="Luxury Pedicure">
+                  <img src="/images/pedicure.png" alt="Luxury Pedicure" loading="lazy">
                 </picture>
                 <div class="service-overlay">
                   <a href="#book" class="service-btn">Book Now</a>
@@ -287,7 +293,7 @@
               <div class="service-image">
                 <picture>
                   <source srcset="/images/eyebrows.webp" type="image/webp">
-                  <img src="/images/eyebrows.png" alt="Eyebrow Design">
+                  <img src="/images/eyebrows.png" alt="Eyebrow Design" loading="lazy">
                 </picture>
                 <div class="service-overlay">
                   <a href="#book" class="service-btn">Book Now</a>
@@ -310,7 +316,7 @@
               <div class="service-image">
                 <picture>
                   <source srcset="/images/waxing.webp" type="image/webp">
-                  <img src="/images/waxing.png" alt="Professional Waxing">
+                  <img src="/images/waxing.png" alt="Professional Waxing" loading="lazy">
                 </picture>
                 <div class="service-overlay">
                   <a href="#book" class="service-btn">Book Now</a>
@@ -342,7 +348,7 @@
         <div class="about-image">
           <picture>
             <source srcset="/images/tien-tien.webp" type="image/webp">
-            <img src="/images/tien-tien.png" alt="Kate Tu - Master Cosmetologist">
+            <img src="/images/tien-tien.png" alt="Kate Tu - Master Cosmetologist" loading="lazy">
           </picture>
           <div class="about-badge">
             <span>5+ Years</span>
@@ -458,7 +464,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-1.webp" type="image/webp">
-                <img src="/images/nails-1.png" alt="Custom Nail Art Design">
+                <img src="/images/nails-1.png" alt="Custom Nail Art Design" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -472,7 +478,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-2.webp" type="image/webp">
-                <img src="/images/nails-2.png" alt="Elegant Nail Design">
+                <img src="/images/nails-2.png" alt="Elegant Nail Design" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -486,7 +492,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-3.webp" type="image/webp">
-                <img src="/images/nails-3.png" alt="Artistic Nail Creation">
+                <img src="/images/nails-3.png" alt="Artistic Nail Creation" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -500,7 +506,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-4.webp" type="image/webp">
-                <img src="/images/nails-4.png" alt="Luxury Nail Design">
+                <img src="/images/nails-4.png" alt="Luxury Nail Design" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -514,7 +520,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-5.webp" type="image/webp">
-                <img src="/images/nails-5.png" alt="Creative Nail Art">
+                <img src="/images/nails-5.png" alt="Creative Nail Art" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -528,7 +534,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-6.webp" type="image/webp">
-                <img src="/images/nails-6.png" alt="Professional Nail Work">
+                <img src="/images/nails-6.png" alt="Professional Nail Work" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -542,7 +548,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-7.webp" type="image/webp">
-                <img src="/images/nails-7.png" alt="Stunning Nail Design">
+                <img src="/images/nails-7.png" alt="Stunning Nail Design" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -556,7 +562,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-8.webp" type="image/webp">
-                <img src="/images/nails-8.png" alt="Detailed Nail Art">
+                <img src="/images/nails-8.png" alt="Detailed Nail Art" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -570,7 +576,7 @@
             <div class="gallery-item">
               <picture>
                 <source srcset="/images/nails-9.webp" type="image/webp">
-                <img src="/images/nails-9.png" alt="Beautiful Nail Creation">
+                <img src="/images/nails-9.png" alt="Beautiful Nail Creation" loading="lazy">
               </picture>
               <div class="gallery-overlay">
                 <div class="gallery-info">
@@ -625,7 +631,7 @@
               <div class="review-image">
                 <picture>
                   <source srcset="/images/review--a.webp" type="image/webp">
-                  <img src="/images/review--a.png" alt="Nail work by Kate Tu">
+                  <img src="/images/review--a.png" alt="Nail work by Kate Tu" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -651,7 +657,7 @@
               <div class="review-image">
                 <picture>
                   <source srcset="/images/review--b.webp" type="image/webp">
-                  <img src="/images/review--b.png" alt="Beautiful nail design">
+                  <img src="/images/review--b.png" alt="Beautiful nail design" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -681,7 +687,7 @@
               <div class="review-image">
                 <picture>
                   <source srcset="/images/review--c.webp" type="image/webp">
-                  <img src="/images/review--c.png" alt="Eyelash extensions by Kate Tu">
+                  <img src="/images/review--c.png" alt="Eyelash extensions by Kate Tu" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -702,7 +708,7 @@
         <p class="section-subtitle">Ready to experience the finest in beauty services? Schedule your appointment today.</p>
       </div>
       <div class="booking-iframe">
-        <iframe src="https://charming-beauty-by-kate-2.square.site/" frameborder="0" title="Book Appointment"></iframe>
+        <iframe src="https://charming-beauty-by-kate-2.square.site/" frameborder="0" title="Book Appointment" loading="lazy"></iframe>
       </div>
     </div>
   </section>
@@ -848,8 +854,8 @@
   }
   </script>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <!-- Scripts (defer for non-blocking load) -->
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -299,7 +299,8 @@ img {
   background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* scroll on mobile for better LCP/INP; fixed on desktop for parallax */
+  background-attachment: scroll;
   position: relative;
   display: flex;
   justify-content: center;
@@ -310,6 +311,12 @@ img {
 @supports not (background-image: url("/images/hero-2.pmg.webp")) {
   .hero {
     background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg.png");
+  }
+}
+/* Parallax effect on desktop only - fixed attachment hurts mobile LCP/INP */
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
   }
 }
 @media (max-height: 700px) {
