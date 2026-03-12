@@ -1,5 +1,132 @@
 // main.js
 
+// ===============================
+// Microsoft Clarity Custom Tracking
+// ===============================
+
+function initializeClarityTracking() {
+    if (typeof clarity === 'undefined') return;
+
+    // Set custom page tags based on URL
+    const path = window.location.pathname;
+    const pageName = path.split('/').pop().replace('.html', '') || 'index';
+    
+    // Tag page type for filtering in Clarity dashboard
+    if (pageName === 'index' || pageName === '') {
+        clarity('set', 'page_type', 'homepage');
+    } else if (pageName.includes('-mi')) {
+        clarity('set', 'page_type', 'location_page');
+        clarity('set', 'location', pageName.replace('-mi', '').replace(/-/g, ' '));
+    } else if (pageName.includes('caro-mi')) {
+        clarity('set', 'page_type', 'service_page');
+        const serviceName = pageName.replace('-caro-mi', '').replace(/-/g, ' ');
+        clarity('set', 'service', serviceName);
+    }
+
+    // Track booking intent - key conversion actions
+    trackBookingClicks();
+    trackPhoneClicks();
+    trackScrollDepth();
+    trackServiceInterest();
+}
+
+function trackBookingClicks() {
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('a');
+        if (!target) return;
+
+        const href = target.getAttribute('href') || '';
+        const text = target.textContent.toLowerCase();
+
+        // Track clicks to booking section or external booking
+        if (href.includes('#book') || href.includes('square.site') || 
+            text.includes('book') || text.includes('schedule') || text.includes('appointment')) {
+            if (typeof clarity !== 'undefined') {
+                clarity('set', 'booking_click', 'true');
+                clarity('set', 'booking_source', getPageSection(target));
+            }
+        }
+    });
+}
+
+function trackPhoneClicks() {
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('a');
+        if (!target) return;
+
+        const href = target.getAttribute('href') || '';
+        if (href.startsWith('tel:')) {
+            if (typeof clarity !== 'undefined') {
+                clarity('set', 'phone_click', 'true');
+                clarity('set', 'call_source', getPageSection(target));
+            }
+        }
+    });
+}
+
+function trackScrollDepth() {
+    let maxScroll = 0;
+    const milestones = [25, 50, 75, 100];
+    const reached = new Set();
+
+    window.addEventListener('scroll', function() {
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = Math.round((window.scrollY / scrollHeight) * 100);
+        
+        if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+            
+            milestones.forEach(milestone => {
+                if (scrollPercent >= milestone && !reached.has(milestone)) {
+                    reached.add(milestone);
+                    if (typeof clarity !== 'undefined') {
+                        clarity('set', 'scroll_depth', milestone + '%');
+                    }
+                }
+            });
+        }
+    });
+}
+
+function trackServiceInterest() {
+    // Track which services users hover/engage with
+    const serviceCards = document.querySelectorAll('.service-card');
+    
+    serviceCards.forEach(card => {
+        let hoverTimer;
+        
+        card.addEventListener('mouseenter', function() {
+            hoverTimer = setTimeout(() => {
+                const serviceTitle = card.querySelector('.service-title');
+                if (serviceTitle && typeof clarity !== 'undefined') {
+                    clarity('set', 'service_interest', serviceTitle.textContent.trim());
+                }
+            }, 2000); // 2 seconds = genuine interest
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            clearTimeout(hoverTimer);
+        });
+    });
+}
+
+function getPageSection(element) {
+    const section = element.closest('section');
+    if (section) {
+        return section.id || section.className.split(' ')[0] || 'unknown';
+    }
+    if (element.closest('.hero')) return 'hero';
+    if (element.closest('.navbar')) return 'navigation';
+    if (element.closest('.footer')) return 'footer';
+    return 'unknown';
+}
+
+// Initialize Clarity tracking when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Small delay to ensure Clarity is loaded
+    setTimeout(initializeClarityTracking, 500);
+});
+
 const reviews = [
   {
       text: "Placeholder review 1...",
