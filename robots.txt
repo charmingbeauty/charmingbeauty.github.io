@@ -14,6 +14,11 @@ Allow: /millington-mi.html
 Allow: /sebewaing-mi.html
 Allow: /marlette-mi.html
 
+# Service pages
+Allow: /eyelash-extensions-caro-mi.html
+Allow: /nail-art-caro-mi.html
+Allow: /eyebrow-services-caro-mi.html
+
 # Allow images and assets
 Allow: /images/
 Allow: /css/
