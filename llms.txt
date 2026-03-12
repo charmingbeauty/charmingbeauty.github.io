@@ -129,7 +129,8 @@ Charming Beauty proudly serves clients throughout Michigan's Thumb region:
 ### Service Pages
 - **Eyelash Extensions (/eyelash-extensions-caro-mi.html)** - Detailed lash extension services: classic, volume, hybrid, lash lifts
 - **Nail Art & Manicures (/nail-art-caro-mi.html)** - Gel manicures, acrylics, dip powder, custom nail art
-- **Eyebrow Services (/eyebrow-services-caro-mi.html)** - Brow shaping, tinting, and lamination
+- **Eyebrow Services (/eyebrow-services-caro-mi.html)** - Overview of all brow services (shaping, tinting, lamination)
+  - **Brow Lamination (/brow-lamination-caro-mi.html)** - Eyebrow lift/lamination for fluffy, feathered brows
 
 ### Location Pages
 - **Vassar, MI (/vassar-mi.html)** - Location page for Vassar clients

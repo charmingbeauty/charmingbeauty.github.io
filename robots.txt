@@ -18,6 +18,7 @@ Allow: /marlette-mi.html
 Allow: /eyelash-extensions-caro-mi.html
 Allow: /nail-art-caro-mi.html
 Allow: /eyebrow-services-caro-mi.html
+Allow: /brow-lamination-caro-mi.html
 
 # Allow images and assets
 Allow: /images/
