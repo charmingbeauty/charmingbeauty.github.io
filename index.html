@@ -10,9 +10,13 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <!-- Preload LCP image (hero) - critical for Core Web Vitals -->
   <link rel="preload" as="image" href="/images/hero-2.pmg.webp">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Critical CSS - required for above-the-fold (hero, navbar) -->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" />
+  <!-- Non-critical: load async to avoid render blocking (~900ms savings) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css"></noscript>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <!-- SEO Meta Tags -->
   <title>Luxury Nail Salon & Lash Extensions in Caro, MI | Charming Beauty by Kate Tu</title>
@@ -369,21 +373,21 @@
             <div class="credential">
               <span class="credential-icon">🏆</span>
               <div>
-                <h4>Certified Cosmetologist</h4>
+                <h3>Certified Cosmetologist</h3>
                 <p>Licensed & Insured</p>
               </div>
             </div>
             <div class="credential">
               <span class="credential-icon">✨</span>
               <div>
-                <h4>Permanent Makeup Artist</h4>
+                <h3>Permanent Makeup Artist</h3>
                 <p>Specialized Training</p>
               </div>
             </div>
             <div class="credential">
               <span class="credential-icon">👁️</span>
               <div>
-                <h4>Lash Extension Expert</h4>
+                <h3>Lash Extension Expert</h3>
                 <p>Advanced Techniques</p>
               </div>
             </div>
