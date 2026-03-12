@@ -31,12 +31,15 @@ Your site was already in good shape (all Core Web Vitals "good"), but the **16.7
 
 ## Remaining Recommendations (Manual)
 
-### High Impact
+### Image Optimizations (Completed Mar 2026)
 
-| Item | Issue | Action |
-|------|-------|--------|
-| **hero-2.pmg.png** | 4.4 MB fallback image (used in `@supports` for old browsers) | Create a smaller PNG version (~200KB) or remove the fallback if you no longer support those browsers |
-| **n-white.png** | 3 MB – not referenced in index.html | Remove if unused, or optimize and lazy-load where needed |
+| Image | Before | After | Savings |
+|-------|--------|-------|---------|
+| hero-2.pmg.png fallback | 4.4 MB | 273 KB (JPEG) | **94%** |
+| hero-2.pmg.png (kept as opt. PNG) | 4.4 MB | 1.35 MB | 70% |
+| n-white.png | 3.0 MB | 1.1 MB | 63% |
+| hero.png | 1.5 MB | 633 KB | 58% |
+| review images, nails, etc. | ~6 MB | ~2.5 MB | ~60% |
 | **Review large images** | Several PNGs are 300–700KB each | Prefer WebP everywhere; add `<source>` for WebP in picture elements that still use PNG only |
 
 ### Medium Impact

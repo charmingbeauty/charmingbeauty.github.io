@@ -310,7 +310,8 @@ img {
 }
 @supports not (background-image: url("/images/hero-2.pmg.webp")) {
   .hero {
-    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg.png");
+    /* JPEG fallback for old browsers (273KB vs 4.4MB PNG) */
+    background: linear-gradient(rgba(26, 26, 26, 0.6), rgba(0, 0, 0, 0.4)), url("/images/hero-2.pmg-fallback.jpg");
   }
 }
 /* Parallax effect on desktop only - fixed attachment hurts mobile LCP/INP */
