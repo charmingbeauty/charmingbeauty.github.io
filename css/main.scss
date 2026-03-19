@@ -98,6 +98,16 @@ img {
   height: auto;
 }
 
+// Ensure single list bullet - prevent double bullets from manual + default
+ul {
+  list-style-type: disc;
+  padding-left: 1.25em;
+
+  li {
+    margin-bottom: 0.25em;
+  }
+}
+
 // Typography Styles
 .section-title {
   font-family: $font-heading;
@@ -1192,4 +1202,11 @@ img {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200px 100%;
   animation: shimmer 1.5s infinite;
+}
+
+// Communities grid - 2x2 on desktop, 1 column on mobile
+.communities-grid {
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr !important;
+  }
 }
