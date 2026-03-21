@@ -892,17 +892,20 @@ ul li {
 .footer .footer-contact address p {
   margin-bottom: 4px;
 }
-.footer .footer-locations h4 {
+.footer .footer-locations h4,
+.footer .footer-services h4 {
   color: #D4A574;
   margin-bottom: 20px;
   font-weight: 600;
 }
-.footer .footer-locations .location-links {
+.footer .footer-locations .location-links,
+.footer .footer-services .location-links {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.footer .footer-locations .location-links a {
+.footer .footer-locations .location-links a,
+.footer .footer-services .location-links a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 14px;
@@ -910,7 +913,8 @@ ul li {
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
-.footer .footer-locations .location-links a:hover {
+.footer .footer-locations .location-links a:hover,
+.footer .footer-services .location-links a:hover {
   color: #D4A574;
   border-bottom-color: #D4A574;
   padding-left: 8px;
