@@ -941,6 +941,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFFFFF;
   transition: all 0.3s ease;
 }
 .footer .footer-social .social-links a:hover {
@@ -950,7 +951,8 @@ ul li {
 .footer .footer-social .social-links a img {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1);
+  filter: none;
+  display: block;
 }
 .footer .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
