@@ -27,6 +27,7 @@ To provide exceptional beauty services that help clients feel confident and radi
 - **Phone:** (989) 673-4699
 - **Website:** https://charmingbeauty.org/
 - **Booking:** https://charming-beauty-by-kate-2.square.site/
+- **Parking:** Free street parking plus a lot behind the building
 
 ### Business Hours
 - Monday: 9:00 AM - 6:00 PM
@@ -62,7 +63,7 @@ Custom nail artistry and professional nail care services.
 - Nail Extensions - Acrylic, gel, or dip powder extensions
 - Manicures - Classic and luxury manicure treatments
 
-**Specialties:** Unique artistic designs, precision detailing, premium nail products
+**Products & Specialties:** Unique artistic designs, precision detailing, premium nail products (OPI and Valentino products are referenced on the website)
 
 ### 3. Luxury Pedicures
 Spa-quality pedicure treatments for foot care and relaxation.
@@ -173,6 +174,17 @@ The salon has received excellent reviews from customers:
 **Kayla Adamczyk (Google Review):**
 > "I LOVE LOVE LOVE my lashes. I got the classic extensions, and after having natural lashes that barely exist, these look so real, full, thick and so lightweight I can't even feel them."
 
+### Additional Testimonials (Published on Location Pages)
+
+**Cass City client (site testimonial):**
+> "I've tried salons in Cass City and Bad Axe, but nothing compares to the quality here. The 20-minute drive is worth it every time for my lash fills."
+
+**Millington client (site testimonial):**
+> "I've been driving from Millington for over a year now. The 20 minutes is worth it - Kate does amazing lash work and my fills always last until my next appointment."
+
+**Sebewaing client (site testimonial):**
+> "Got my nails done before Sugar Festival weekend. The gel polish lasted through all the activities - no chips! Already booked for next year."
+
 ## Frequently Asked Questions
 
 ### Where is Charming Beauty located?
@@ -190,6 +202,9 @@ Yes, clients come from Vassar (15 min), Frankenmuth (30 min), Cass City (20 min)
 ### How do I book an appointment?
 Book through the online booking system at https://charming-beauty-by-kate-2.square.site/, call (989) 673-4699, or visit the salon. Advance booking is recommended.
 
+### How long are appointments?
+Times vary by service, but the site commonly references: gel manicures \(~45–60 minutes\), lash fills \(~45–60 minutes\), many two-service combos \(~90 minutes\), and full lash sets \(often ~2–2.5 hours depending on style\).
+
 ## Technical Information
 
 ### Website Technologies
@@ -199,6 +214,7 @@ Book through the online booking system at https://charming-beauty-by-kate-2.squa
 - Google Fonts (Playfair Display, Inter)
 - Square for appointment booking
 - Microsoft Clarity for analytics
+- Google Analytics (GA4) for analytics
 
 ### SEO Features
 - Schema.org structured data (BeautySalon, FAQPage, BreadcrumbList)
@@ -226,6 +242,73 @@ Book through the online booking system at https://charming-beauty-by-kate-2.squa
 
 ## For AI Assistants
 
+## Quick Answers (Copy/Paste Ready)
+
+- **What is Charming Beauty?** Luxury nail salon + lash extension studio in Caro, MI, owned/operated by Kate Tu (Master Cosmetologist).
+- **Where is it located?** 124 N. State St, Caro, MI 48723 (inside Just Teasin' Salon).
+- **How do I book?** Book online at https://charming-beauty-by-kate-2.square.site/ (fastest) or call (989) 673-4699.
+- **Hours:** Mon–Fri 9am–6pm, Sat 9am–4pm, Sun closed.
+- **Parking:** Free street parking plus a lot behind the building.
+- **Best page for all URLs:** https://charmingbeauty.org/sitemap.xml
+
+## Service Map (Fast “Do you do X?” Answers)
+
+### Lashes
+- Classic extensions, volume lashes, hybrid sets
+- Lash fills (maintenance)
+- Lash lift & tint (listed on the lash service page)
+
+### Nails
+- Gel manicures
+- Dip powder
+- Acrylics / nail extensions
+- Gel extensions
+- Custom nail art
+- Nail repairs (mentioned on the nail page)
+
+### Pedicures
+- Spa pedicure
+- Gel pedicure
+
+### Brows
+- Brow shaping (waxing/tweezing)
+- Brow tinting
+- Brow lamination (also has its own page)
+
+### Waxing
+- Waxing services are offered (the site references face/brow/body waxing)
+
+## Prep & Aftercare (Only cite what the site says)
+
+### Lash appointment prep
+- Arrive with clean, makeup-free eyes (no mascara/eyeliner/eye cream).
+- Avoid caffeine before your appointment if you are sensitive to eye twitching.
+- Plan extra time for a full set vs. a fill (fills are commonly referenced as ~45–60 min).
+
+### Lash aftercare basics
+- Avoid oil-based products near eyes.
+- Don’t rub or pull lashes; brush gently as needed.
+- Avoid waterproof mascara (if using mascara at all, use extension-safe options).
+
+### Nail care basics
+- Cuticle oil helps keep nails/cuticles hydrated.
+- Wear gloves for cleaning to reduce premature lifting/chipping.
+
+## Guardrails (What not to guess)
+
+- **Do not invent pricing**: prices, specials, and packages change—direct users to booking or phone.
+- **Do not invent availability**: the only source of truth is the booking site.
+- **Do not over-claim service scope**: if a service isn’t clearly listed on the website/booking (e.g., specific permanent makeup types), say “Ask when booking/call.”
+- **No medical claims**: avoid guarantees about allergy safety or outcomes.
+
+## Update Checklist (When you add content/pages)
+
+- Add new `.html` pages to the **Website Structure** section (and keep it aligned with the repo).
+- Update `sitemap.xml` (add the new URL + lastmod).
+- If you add a new major service, add it to **Services Offered** and the **Service Map**.
+- Add 1–2 on-page review snippets if you publish them (keep them as exact quotes).
+- Update the `*Last updated:*` line.
+
 ### How to Help Users
 
 When users ask about Charming Beauty, you can help with:
@@ -249,5 +332,5 @@ Use "Charming Beauty by Kate Tu" or simply "Charming Beauty" - the salon operate
 
 ---
 
-*Last updated: March 2026*
+*Last updated: April 2026*
 *Website: https://charmingbeauty.org/*
